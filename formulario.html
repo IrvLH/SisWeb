@@ -10,11 +10,12 @@
 </head>
 <body>
     <h1>Formulario</h1>
-    <form action="">
+    <form action="javas.html" method="GET">
         <div class="row">
-            <div class="col">Nombre: <input type="text"></div>
-            <div class="col">Direccion: <input type="text"></div>
-            <div class="col">Telefono: <input type="text"></div>
+            <div class="col">Nombre: <input id="nom" name="nombre" type="text" class="form-control" placeholder="Ej. Adrian Lorena Galeana"></div>
+            <div class="col">Direccion: <input id="dir" name="direcc" type="text" class="form-control" placeholder="Ej. Cortes #456"></div>
+            <div class="col">Telefono: <input id="tel" name="telefono" type="text" class="form-control" placeholder="Ej. 2255667788"></div>
+            <div class="col">Contraseña: <input id="cont" name="contra" type="password" class="form-control"></div>
                 <input type="submit" value="enviar">
                 <a href="index.html" class="btn btn-danger">enviar</a>
         </div>
