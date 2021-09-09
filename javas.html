@@ -16,8 +16,9 @@
         var url = window.location.href;
         var queryString = window.location.search;
         var parametros = new URLSearchParams(queryString);
-        //document.write(parametros.get('nombre'));
+        
     </script>
+    
 
     <div class="card" style="width: 18rem">
         <div class="card-haeder">Informacion</div>
@@ -37,19 +38,34 @@
                     </ul>
                 </div>
             </div>
+            <div id="aviso" class="form-text">Nunca compartiremos tu correo con nadie más.</div>
+           
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check1">
+                <label class="form-check-label" for="check1">Recuérdame</label>
+            </div>
     </div>
 
 <a href="index.html" class="btn btn-danger">enviar</a>
-</body>
-    <script>
-        var queryString2 = window.location.search;
-        var parametros2 = new URLSearchParams(queryString2);
-        var n = parametros.get('nombre');
-        var d = parametros.get('direccion');
-        var t = parametros.get('telefono');
 
-        document.getElementById("nom").innerHTML = n;
-        document.getElementById("dir").innerHTML = d;
-        document.getElementById("telef").innerHTML = t;
-    </script>
+<a class="btn btn-primary" onclick="enviar()">Enviar mensaje</a>
+
+<button type="button" class="btn btn-primary" id="elBoton">Enviar mensaje listener</button>
+
+<a class="btn btn-primary" id="botonDeshacer">Deshacer</a>
+
+</body>
+<script src="utilFormulario.js"></script>
+<script>
+    var queryString2 = window.location.search;
+    var parametros2 = new URLSearchParams(queryString2);
+
+    var n = parametros2.get('nombre');
+    var d = parametros2.get('direccion');
+    var t = parametros2.get('telefono');
+
+    document.getElementById("nom").innerHTML = n;
+    document.getElementById("dir").innerHTML = d;
+    document.getElementById("telef").innerHTML = t;
+</script>
 </html>
