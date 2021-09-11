@@ -1,8 +1,24 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 5;
+    padding: 5;
 }
 
 h1{
     color:indigo;
+}
+
+#Numero{
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+    width: 300px;
+    height: 30px;
+}
+
+#Operacion{
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+    width: 180px;
+    height: 30px;
 }
