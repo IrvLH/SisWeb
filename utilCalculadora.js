@@ -32,6 +32,7 @@ function limpiarUno(){
 function Calcular(){
     window.alert('Calculando...'); 
     document.getElementById('Resultado').value = "Algo"; 
+    //este falto
 }
 
 /*var btnEnv = document.getElementById('Limpiar');
